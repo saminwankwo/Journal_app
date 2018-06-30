@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/abt_me"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nwankwo Chibuike Samuel"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Dev"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/address">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:contentDescription="TODO"
+                android:padding="4dp"
+                android:src="@drawable/address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:text="Umuahia Abia State, Nigeria"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/address2">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:src="@drawable/email"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:text="nwankwosami@gmail.com"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/connect_me"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/connect_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:onClick="facebookLogo"
+                android:src="@drawable/fbk_logo"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:onClick="twitterLogo"
+                android:src="@drawable/twitter"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:onClick="instagramLogo"
+                android:src="@drawable/instagram"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:onClick="githubLogo"
+                android:src="@drawable/github"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/connect_icons"
+            android:layout_below="@id/connect_icons"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="18dp"
+                android:text="@string/pwded"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/andela_logo" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/google_logo" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/udacity_logo" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

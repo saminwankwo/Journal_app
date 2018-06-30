@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hide It</string>
+    <string name="abt_me">This is a simple journal application developed in partial fulfilment of
+        the course requirement(Android Dev) for Andela learning community, Udacity and Google Africa scholarship challenge. Challenge 2.0 by</string>
+    <string name="connect_me">Keep in touch with me</string>
+    <string name="create_acct">No account yet? Create one</string>
+    <string name="abt">About</string>
+    <string name="login">Login</string>
+    <string name="pwded">Powered by</string>
+</resources>
